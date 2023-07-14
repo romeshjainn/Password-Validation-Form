@@ -1,0 +1,122 @@
+/* Importing Fonts  */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;700;900&display=swap");
+
+/* Basic Reset  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    position: relative;
+}
+
+/* Styling Main Container  */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 350px;
+    margin: 0px 15px;
+    min-height: 300px;
+}
+
+/* Form Heading  */
+.heading {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+/* Form  */
+.loginForm {
+    width: 100%;
+    padding: 25px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 10px solid #eff1f3;
+    margin: 0px 10px;
+}
+
+/* Form Heading And About  */
+.formHeading {
+    font-size: 1rem;
+}
+
+.formAbout {
+    color: #4e4d54;
+    font-weight: 400;
+}
+
+/* Label, Inputfield & Reset Button Here  */
+.formLabel {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+button {
+    font-size: 0.7rem;
+    width: 100%;
+    padding: 9px;
+    border-radius: 7px;
+    border: 2px solid #dedede;
+    height: 2.5rem;
+}
+
+
+button {
+    background-color: #1964ff;
+    color: #fff;
+    font-weight: 600;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+/* Password Requirements  */
+.pwdReq {
+    display: flex;
+    font-size: 0.6rem;
+    color: #1964ff;
+    margin: 10px 0px;
+}
+
+.column {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.column div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Styling Check Marks Here  */
+.checkmark {
+    width: 10px;
+}
+
+#lowerImg,
+#upperImg,
+#oneNumImg,
+#specialCharImg,
+#minImg {
+    display: none;
+}
