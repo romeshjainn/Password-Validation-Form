@@ -120,3 +120,135 @@ button:hover {
 #minImg {
     display: none;
 }
+
+/* Media Queries For Responsiveness  */
+@media screen and (max-width: 500px) {
+    body {
+        font-size: 12px;
+    }
+
+    .loginForm {
+        gap: 10px;
+    }
+
+    .formLabel {
+        font-size: 0.7rem;
+    }
+
+    input[type="password"],
+
+    button {
+        font-size: 0.7rem;
+    }
+
+    .pwdReq {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .column {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 250px) {
+    body{
+        font-size: 8px;
+    }
+    .container{
+        width: 80vw ;
+    }
+}
+
+/* Styling Popop */
+#error {
+    font-size: 0.7rem;
+    color: red;
+}
+
+.popup{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: 1px solid;
+    visibility: hidden;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    transition: transform 0.5s, top 0.5s;
+}
+.popImg{
+    border-radius: 15px ;
+    height: 60%;
+}
+.popImg img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px ;
+
+}
+.popup p{
+    text-align: center;
+    margin: 8px 0px;
+    font-size: 13px;
+}
+
+
+.openPopup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+
+}
+
+/* Styling Input With View Button  */
+#password{
+    border: none;
+
+}
+.passwordB, .passConf{
+    border: none;
+    border-radius: 7px;
+    height: 96%;
+    font-size: .7rem;
+    padding: 9px;
+    min-width: 90%;
+    outline: none;
+}
+input[type="text"]{
+    border: none;
+}
+.viewPass{
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    gap: 1px;
+    border-radius: 7px;
+    border: 2px solid #dedede;
+    height: 2.5rem;
+
+}
+.viewPass input[type="password"]{
+    width: calc(90% - 5px);
+}
+.viewPass button{
+    width: calc(10% - 5px);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: none;
+}
+
+.viewPass:hover {
+    cursor: pointer;
+    border: 2px solid #236d43;
+}
+
