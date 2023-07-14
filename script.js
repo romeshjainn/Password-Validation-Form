@@ -58,3 +58,74 @@ document.getElementById("closePop").onclick = function(){
     popup.classList.remove("openPopup")
 
 }
+
+
+// Function To Check Password Requirements 
+function checkConditions() {
+    let lower = document.getElementById("lower");
+    let upper = document.getElementById("upper");
+    let oneNum = document.getElementById("oneNum");
+    let specialChar = document.getElementById("specialChar");
+    let min = document.getElementById("min");
+
+    let pass1 = document.getElementById("password").value;
+
+
+
+    if (pass1.match(/[0-9]/)) {
+        oneNum.style.color = "green";
+        oneNumImg.style.display = "block";
+    }
+    else{
+        oneNum.style.color = "red"
+    }
+
+    if (pass1.match(/[a-z]/)) {
+        lower.style.color = "green";
+        lowerImg.style.display = "block";
+    }
+    else{
+        lower.style.color = "red"
+    }
+
+    if (pass1.match(/[A-Z]/)) {
+        upper.style.color = "green";
+        upperImg.style.display = "block";
+    }
+    else{
+        upper.style.color = "red"
+    }
+
+    if (pass1.match(/[!@#$%^&*().,/;:[{}=+-]/)) {
+        specialChar.style.color = "green";
+        specialCharImg.style.display = "block";
+    }
+    else{
+        specialChar.style.color = "red"
+    }
+
+    if (pass1.length >= 8) {
+        min.style.color = "green";
+        minImg.style.display = "block";
+    }
+    else{
+        min.style.color = "red"
+    }
+}
+
+
+//function to view when clicked on eye
+document.getElementById("viewPass").onclick = function(){
+    event.preventDefault();
+    password.type = password.type === 'password' ? 'text' : 'password';
+}
+
+document.getElementById("viewPass2").onclick = function(){
+    event.preventDefault();
+    passwordConf.type = passwordConf.type === 'password' ? 'text' : 'password';
+}
+
+// document.getElementById("passwordView").onclick = function (){
+
+    // let viewPassword1 = document.getElementById("password").value;
+
