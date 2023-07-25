@@ -3,7 +3,3 @@ A responsive password validation form (HTML/CSS/JS) with toggling visibility. En
 <<<<<<< HEAD
 
 
-romesh
-=======
-nitin
-
